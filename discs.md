@@ -1,0 +1,10 @@
+ 
+# PROPERTIES
+
+### SET
+### QUALITY
+### STARED
+### LEVEL
+### SLOT
+### MAIN STAT
+### SUBSTAT (4)

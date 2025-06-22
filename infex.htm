@@ -1,191 +1,112 @@
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
 
-<h1>UID: 1</h1>
-<h1>TOKEN: 7772774430813888210</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-<div class="container">
-    <h1>QUERY</h1>
+<body>
 
-    <div class="input-group">
-        <label for="disc_id">disc:</label>
-        <select id="disc_id">
-            <option value="332">KING OF THE SUMMIT</option>
-            <option value="331">YUNKUI TALES</option>
-            <option value="330">PHAETHON'S MELODY</option>
-            <option value="329">SHADOW HARMONY</option>
-            <option value="328">ASTRAL VOICE</option>
-            <option value="327">BRANCH & BLADE SONG</option>
-            <option value="326">FANGED METAL</option>
-            <option value="325">POLAR METAL</option>
-            <option value="324">THUNDER METAL</option>
-            <option value="323">CHAOTIC METAL</option>
-            <option value="322">INFERNO METAL</option>
-            <option value="319">PROTO PUNK</option>
-            <option value="318">CHAOS JAZZ</option>
-            <option value="316">SWING JAZZ</option>
-            <option value="315">SOUL ROCK</option>
-            <option value="314">HORMONE PUNK</option>
-            <option value="313">FREEDOM BLUES</option>
-            <option value="312">SHOCKSTAR DISCO</option>
-            <option value="311">PUFFER ELECTRO</option>
-        </select>
+<h1>query generator</h1>
+    
+    <!-- disc set -->
+    <select id="disc_set">
+        <option value="">select disc set</option>
+        <option value="332">KING OF THE SUMMIT</option>
+        <option value="331">YUNKUI TALES</option>
+        <option value="330">PHAETHON'S MELODY</option>
+        <option value="329">SHADOW HARMONY</option>
+        <option value="328">ASTRAL VOICE</option>
+        <option value="327">BRANCH & BLADE SONG</option>
+        <option value="326">FANGED METAL</option>
+        <option value="325">POLAR METAL</option>
+        <option value="324">THUNDER METAL</option>
+        <option value="323">CHAOTIC METAL</option>
+        <option value="322">INFERNO METAL</option>
+        <option value="319">PROTO PUNK</option>
+        <option value="318">CHAOS JAZZ</option>
+        <option value="316">SWING JAZZ</option>
+        <option value="315">SOUL ROCK</option>
+        <option value="314">HORMONE PUNK</option>
+        <option value="313">FREEDOM BLUES</option>
+        <option value="312">SHOCKSTAR DISCO</option>
+        <option value="311">PUFFER ELECTRO</option>
+    </select>
+
+    <!-- quality -->
+    <div>
+        <label for="disc_quality">disc quality</label>
+        <input type="number" id="disc_quality" placeholder="quality">
     </div>
 
-    <div class="input-group">
-        <label for="level">quality:</label>
-        <input type="number" id="level" placeholder="2 ~ 4" />
+    <!-- stared -->
+    <div>
+        <label for="disc_stared">disc stared</label>
+        <input type="checkbox" id="disc_stared" placeholder="stared">
     </div>
 
-    <div class="input-group">
-        <label for="level">slot:</label>
-        <input type="number" id="level" placeholder="1 ~ 6" />
+    <!-- level -->
+    <div>
+        <label for="disc_level">disc level</label>
+        <input type="number" id="disc_level" placeholder="level">
     </div>
 
-    <div class="input-group">
-        <label for="level">level:</label>
-        <input type="number" id="level" placeholder="non-zzznatural may crash" />
+    <!-- slot -->
+    <div>
+        <label for="disc_slot">disc slot</label>
+        <input type="number" id="disc_slot" placeholder="slot">
     </div>
 
-    <div class="input-group">
-        <label for="star">starred:</label>
-        <input type="checkbox" id="star" />
+    <!-- mainstat -->
+    <div>
+        <label for="disc_mainstat">disc mainstat</label>
+        <input type="number" id="disc_mainstat" placeholder="mainstat">
     </div>
 
-    <div class="input-group" id="stats">
-        <div class="stat_class">
-        <label for="mainstat_id">main stat:</label>
-        <select id="mainstat_id">
-            <option value="11103">HP</option>
-            <option value="11102">%HP</option>
-            <option value="12103">ATK</option>
-            <option value="12102">%ATK</option>
-            <option value="13103">DEF</option>
-            <option value="13102">%DEF</option>
-            <option value="23203">PEN</option>
-            <option value="23103">%PEN</option>
-            <option value="31402">AM</option>
-            <option value="31203">AP</option>
-            <option value="21103">Crit DMG</option>
-            <option value="20103">Crit Rate</option>
-            <option value="30502">%ER</option>
-            <option value="12202">Impact</option>
-            <option value="31803">Electro</option>
-            <option value="31903">Ether</option>
-            <option value="31603">Fire</option>
-            <option value="31703">Ice</option>
-            <option value="31503">Physic</option>
-        </select>
-        <input type="number" id="properties" placeholder="mainstat value" />
-        </div>
-
-        <div class="stat_class">
-            <label for="substat1_id">sub stat 1:</label>
-            <select id="substat1_id">
-                <option value="11103">HP</option>
-                <option value="11102">%HP</option>
-                <option value="12103">ATK</option>
-                <option value="12102">%ATK</option>
-                <option value="13103">DEF</option>
-                <option value="13102">%DEF</option>
-                <option value="23203">PEN</option>
-                <option value="23103">%PEN</option>
-                <option value="31402">AM</option>
-                <option value="31203">AP</option>
-                <option value="21103">Crit DMG</option>
-                <option value="20103">Crit Rate</option>
-                <option value="30502">%ER</option>
-                <option value="12202">Impact</option>
-                <option value="31803">Electro</option>
-                <option value="31903">Ether</option>
-                <option value="31603">Fire</option>
-                <option value="31703">Ice</option>
-                <option value="31503">Physic</option>
-            </select>
-            <input type="number" id="substat1_value" placeholder="substat 1 value" />
-        </div>
-
-        <div class="stat_class">
-            <label for="substat2_id">sub stat 2:</label>
-            <select id="substat2_id">
-                <option value="11103">HP</option>
-                <option value="11102">%HP</option>
-                <option value="12103">ATK</option>
-                <option value="12102">%ATK</option>
-                <option value="13103">DEF</option>
-                <option value="13102">%DEF</option>
-                <option value="23203">PEN</option>
-                <option value="23103">%PEN</option>
-                <option value="31402">AM</option>
-                <option value="31203">AP</option>
-                <option value="21103">Crit DMG</option>
-                <option value="20103">Crit Rate</option>
-                <option value="30502">%ER</option>
-                <option value="12202">Impact</option>
-                <option value="31803">Electro</option>
-                <option value="31903">Ether</option>
-                <option value="31603">Fire</option>
-                <option value="31703">Ice</option>
-                <option value="31503">Physic</option>
-            </select>
-            <input type="number" id="substat2_value" placeholder="substat 2 value" />
-        </div>
-
-        <div class="stat_class">
-            <label for="substat3_id">sub stat 3:</label>
-            <select id="substat3_id">
-                <option value="11103">HP</option>
-                <option value="11102">%HP</option>
-                <option value="12103">ATK</option>
-                <option value="12102">%ATK</option>
-                <option value="13103">DEF</option>
-                <option value="13102">%DEF</option>
-                <option value="23203">PEN</option>
-                <option value="23103">%PEN</option>
-                <option value="31402">AM</option>
-                <option value="31203">AP</option>
-                <option value="21103">Crit DMG</option>
-                <option value="20103">Crit Rate</option>
-                <option value="30502">%ER</option>
-                <option value="12202">Impact</option>
-                <option value="31803">Electro</option>
-                <option value="31903">Ether</option>
-                <option value="31603">Fire</option>
-                <option value="31703">Ice</option>
-                <option value="31503">Physic</option>
-            </select>
-            <input type="number" id="substat3_value" placeholder="substat 3 value" />
-        </div>
-
-        <div class="stat_class">
-            <label for="substat4_id">sub stat 4:</label>
-            <select id="substat4_id">
-                <option value="11103">HP</option>
-                <option value="11102">%HP</option>
-                <option value="12103">ATK</option>
-                <option value="12102">%ATK</option>
-                <option value="13103">DEF</option>
-                <option value="13102">%DEF</option>
-                <option value="23203">PEN</option>
-                <option value="23103">%PEN</option>
-                <option value="31402">AM</option>
-                <option value="31203">AP</option>
-                <option value="21103">Crit DMG</option>
-                <option value="20103">Crit Rate</option>
-                <option value="30502">%ER</option>
-                <option value="12202">Impact</option>
-                <option value="31803">Electro</option>
-                <option value="31903">Ether</option>
-                <option value="31603">Fire</option>
-                <option value="31703">Ice</option>
-                <option value="31503">Physic</option>
-            </select>
-            <input type="number" id="substat4_value" placeholder="substat 4 value" />
-
+    <!-- substats -->
+    <div>
+        <label for="disc_substat1">disc substat1</label>
+        <input type="number" id="disc_substat1" placeholder="substat1">
+    </div>
+    <div>
+        <label for="disc_substat2">disc substat2</label>
+        <input type="number" id="disc_substat2" placeholder="substat2">
+    </div>
+    <div>
+        <label for="disc_substat3">disc substat3</label>
+        <input type="number" id="disc_substat3" placeholder="substat3">
+    </div>
+    <div>
+        <label for="disc_substat4">disc substat4</label>
+        <input type="number" id="disc_substat4" placeholder="substat4">
     </div>
 
-    <button id="generate-query">Generate Query</button>
-    <h2>Generated Query:</h2>
-    <textarea id="output" placeholder="i.e. addequip 31041 15 0 [11103 550 1 20103 240 6 21103 480 1 12102 300 1 31203 9 1]"></textarea>
-</div>
+    <button onclick="printQuery()">Print</button>
 
-<script src="script.js"></script>
+    <div id="output">output here</div>
+
+    <button onclick="copyQuery()">Copy</button>
+
+    <script>
+        function printQuery() {
+            const set = document.getElementById('disc_set').value;
+            const quality = document.getElementById('disc_quality').value;
+            const stared = document.getElementById('disc_stared').checked ? '1' : '0';
+            const slot = document.getElementById('disc_slot').value;
+            const level = document.getElementById('disc_level').value;
+            const mainstat = document.getElementById('disc_mainstat').value;
+
+            document.getElementById('output').textContent = "addequip " + set + quality + slot + ' ' + level + ' ' + stared + ' ' + mainstat;
+        }
+
+        function copyQuery() {
+            const output = document.getElementById('output').textContent;
+            navigator.clipboard.writeText(output);
+        }
+    </script>
+
+</body>
+
+</html>
