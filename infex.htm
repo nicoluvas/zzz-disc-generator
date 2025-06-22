@@ -1,0 +1,89 @@
+<h1>UID: 1</h1>
+<h1>TOKEN: 7772774430813888210</h1>
+
+<div class="container">
+    <h1>QUERY</h1>
+
+    <div class="input-group">
+        <label for="disc_id">Disc:</label>
+        <select id="disc_id">
+            <option value="332">KING OF THE SUMMIT</option>
+            <option value="331">YUNKUI TALES</option>
+            <option value="330">PHAETHON'S MELODY</option>
+            <option value="329">SHADOW HARMONY</option>
+            <option value="328">ASTRAL VOICE</option>
+            <option value="327">BRANCH & BLADE SONG</option>
+            <option value="326">FANGED METAL</option>
+            <option value="325">POLAR METAL</option>
+            <option value="324">THUNDER METAL</option>
+            <option value="323">CHAOTIC METAL</option>
+            <option value="322">INFERNO METAL</option>
+            <option value="319">PROTO PUNK</option>
+            <option value="318">CHAOS JAZZ</option>
+            <option value="316">SWING JAZZ</option>
+            <option value="315">SOUL ROCK</option>
+            <option value="314">HORMONE PUNK</option>
+            <option value="313">FREEDOM BLUES</option>
+            <option value="312">SHOCKSTAR DISCO</option>
+            <option value="311">PUFFER ELECTRO</option>
+        </select>
+    </div>
+
+    <div class="input-group">
+        <label for="level">Quality:</label>
+        <input type="number" id="level" placeholder="2 ~ 4" />
+    </div>
+
+    <div class="input-group">
+        <label for="level">Slot:</label>
+        <input type="number" id="level" placeholder="1 ~ 6" />
+    </div>
+
+    <div class="input-group">
+        <label for="level">Level:</label>
+        <input type="number" id="level" placeholder="non-zzznatural may crash" />
+    </div>
+
+    <div class="input-group">
+        <label for="star">Starred:</label>
+        <input type="checkbox" id="star" />
+    </div>
+
+    <div class="input-group">
+        <label for="properties">Properties/Stats:</label> <br>
+
+        <label for="mainstat_id">main stat:</label>
+        <select id="mainstat_id">
+            <option value="332">KING OF THE SUMMIT</option>
+            <option value="331">YUNKUI TALES</option>
+            <option value="330">PHAETHON'S MELODY</option>
+            <option value="329">SHADOW HARMONY</option>
+            <option value="328">ASTRAL VOICE</option>
+            <option value="327">BRANCH & BLADE SONG</option>
+            <option value="326">FANGED METAL</option>
+            <option value="325">POLAR METAL</option>
+            <option value="324">THUNDER METAL</option>
+            <option value="323">CHAOTIC METAL</option>
+            <option value="322">INFERNO METAL</option>
+            <option value="319">PROTO PUNK</option>
+            <option value="318">CHAOS JAZZ</option>
+            <option value="316">SWING JAZZ</option>
+            <option value="315">SOUL ROCK</option>
+            <option value="314">HORMONE PUNK</option>
+            <option value="313">FREEDOM BLUES</option>
+            <option value="312">SHOCKSTAR DISCO</option>
+            <option value="311">PUFFER ELECTRO</option>
+        </select>
+
+        <input type="text" id="properties" placeholder="SUBSTAT" />
+        <input type="text" id="properties" placeholder="SUBSTAT" />
+        <input type="text" id="properties" placeholder="SUBSTAT" />
+        <input type="text" id="properties" placeholder="SUBSTAT" />
+    </div>
+
+    <button id="generate-query">Generate Query</button>
+    <h2>Generated Query:</h2>
+    <p id="output"></p>
+</div>
+
+<script src="script.js"></script>
