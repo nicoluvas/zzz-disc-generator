@@ -9,9 +9,10 @@
 
 <body>
 
-<h1>query generator</h1>
-    
+    <h1>query generator</h1>
+
     <!-- disc set -->
+    <label for="disc_set">disc set</label>
     <select id="disc_set">
         <option value="">select disc set</option>
         <option value="332">KING OF THE SUMMIT</option>
@@ -33,12 +34,19 @@
         <option value="313">FREEDOM BLUES</option>
         <option value="312">SHOCKSTAR DISCO</option>
         <option value="311">PUFFER ELECTRO</option>
+        <option value="310">WOODPECKER ELECTRO</option>
     </select>
 
     <!-- quality -->
     <div>
         <label for="disc_quality">disc quality</label>
-        <input type="number" id="disc_quality" placeholder="quality">
+        <select id="disc_quality">
+            <option value="">select quality</option>
+            <option value="2">B rank</option>
+            <option value="3">A rank</option>
+            <option value="4">S rank</option>
+        </select>
+
     </div>
 
     <!-- stared -->
@@ -56,49 +64,215 @@
     <!-- slot -->
     <div>
         <label for="disc_slot">disc slot</label>
-        <input type="number" id="disc_slot" placeholder="slot">
+        <select id="disc_slot">
+            <option value="">select slot</option>
+            <option value="1">slot 1</option>
+            <option value="2">slot 2</option>
+            <option value="3">slot 3</option>
+            <option value="4">slot 4</option>
+            <option value="5">slot 5</option>
+            <option value="6">slot 6</option>
+        </select>
     </div>
 
     <!-- mainstat -->
     <div>
         <label for="disc_mainstat">disc mainstat</label>
-        <input type="number" id="disc_mainstat" placeholder="mainstat">
+        <select id="disc_mainstat">
+            <option value="">select mainstat</option>
+            <option value="11103">HP</option>
+            <option value="11102">%HP</option>
+            <option value="12103">ATK</option>
+            <option value="12102">%ATK</option>
+            <option value="13103">DEF</option>
+            <option value="13102">%DEF</option>
+            <option value="23203">PEN</option>
+            <option value="23103">%PEN</option>
+            <option value="31402">AM</option>
+            <option value="31203">AP</option>
+            <option value="21103">Crit DMG</option>
+            <option value="20103">Crit Rate</option>
+            <option value="30502">%ER</option>
+            <option value="12202">Impact</option>
+            <option value="31803">Electro</option>
+            <option value="31903">Ether</option>
+            <option value="31603">Fire</option>
+            <option value="31703">Ice</option>
+            <option value="31503">Physic</option>
+        </select>
+        <label for="disc_mainstat_value">mainstat value</label>
+        <input type="number" id="disc_mainstat_value">
     </div>
 
     <!-- substats -->
     <div>
+        <!-- substat type -->
         <label for="disc_substat1">disc substat1</label>
-        <input type="number" id="disc_substat1" placeholder="substat1">
+        <select id="disc_substat1">
+            <option value="">select substat1</option>
+            <option value="11103">HP</option>
+            <option value="11102">%HP</option>
+            <option value="12103">ATK</option>
+            <option value="12102">%ATK</option>
+            <option value="13103">DEF</option>
+            <option value="13102">%DEF</option>
+            <option value="23203">PEN</option>
+            <option value="23103">%PEN</option>
+            <option value="31402">AM</option>
+            <option value="31203">AP</option>
+            <option value="21103">Crit DMG</option>
+            <option value="20103">Crit Rate</option>
+            <option value="30502">%ER</option>
+            <option value="12202">Impact</option>
+            <option value="31803">Electro</option>
+            <option value="31903">Ether</option>
+            <option value="31603">Fire</option>
+            <option value="31703">Ice</option>
+            <option value="31503">Physic</option>
+        </select>
+        <!-- substat base -->
+        <label for="disc_substat1_value">substat1 value</label>
+        <input type="number" id="disc_substat1_value">
+        <!-- substat level -->
+        <label for="disc_substat1_level">substat1 level</label>
+        <input type="number" id="disc_substat1_level">
     </div>
+
     <div>
         <label for="disc_substat2">disc substat2</label>
-        <input type="number" id="disc_substat2" placeholder="substat2">
+        <select id="disc_substat2">
+            <option value="">select substat2</option>
+            <option value="11103">HP</option>
+            <option value="11102">%HP</option>
+            <option value="12103">ATK</option>
+            <option value="12102">%ATK</option>
+            <option value="13103">DEF</option>
+            <option value="13102">%DEF</option>
+            <option value="23203">PEN</option>
+            <option value="23103">%PEN</option>
+            <option value="31402">AM</option>
+            <option value="31203">AP</option>
+            <option value="21103">Crit DMG</option>
+            <option value="20103">Crit Rate</option>
+            <option value="30502">%ER</option>
+            <option value="12202">Impact</option>
+            <option value="31803">Electro</option>
+            <option value="31903">Ether</option>
+            <option value="31603">Fire</option>
+            <option value="31703">Ice</option>
+            <option value="31503">Physic</option>
+        </select>
+        <label for="disc_substat2_value">substat2 value</label>
+        <input type="number" id="disc_substat2_value">
+        <label for="disc_substat2_level">substat2 level</label>
+        <input type="number" id="disc_substat2_level">
     </div>
     <div>
         <label for="disc_substat3">disc substat3</label>
-        <input type="number" id="disc_substat3" placeholder="substat3">
+        <select id="disc_substat3">
+            <option value="">select substat3</option>
+            <option value="11103">HP</option>
+            <option value="11102">%HP</option>
+            <option value="12103">ATK</option>
+            <option value="12102">%ATK</option>
+            <option value="13103">DEF</option>
+            <option value="13102">%DEF</option>
+            <option value="23203">PEN</option>
+            <option value="23103">%PEN</option>
+            <option value="31402">AM</option>
+            <option value="31203">AP</option>
+            <option value="21103">Crit DMG</option>
+            <option value="20103">Crit Rate</option>
+            <option value="30502">%ER</option>
+            <option value="12202">Impact</option>
+            <option value="31803">Electro</option>
+            <option value="31903">Ether</option>
+            <option value="31603">Fire</option>
+            <option value="31703">Ice</option>
+            <option value="31503">Physic</option>
+        </select>
+        <label for="disc_substat3_value">substat3 value</label>
+        <input type="number" id="disc_substat3_value">
+        <label for="disc_substat3_level">substat3 level</label>
+        <input type="number" id="disc_substat3_level">
     </div>
     <div>
         <label for="disc_substat4">disc substat4</label>
-        <input type="number" id="disc_substat4" placeholder="substat4">
+        <select id="disc_substat4">
+            <option value="">select substat4</option>
+            <option value="11103">HP</option>
+            <option value="11102">%HP</option>
+            <option value="12103">ATK</option>
+            <option value="12102">%ATK</option>
+            <option value="13103">DEF</option>
+            <option value="13102">%DEF</option>
+            <option value="23203">PEN</option>
+            <option value="23103">%PEN</option>
+            <option value="31402">AM</option>
+            <option value="31203">AP</option>
+            <option value="21103">Crit DMG</option>
+            <option value="20103">Crit Rate</option>
+            <option value="30502">%ER</option>
+            <option value="12202">Impact</option>
+            <option value="31803">Electro</option>
+            <option value="31903">Ether</option>
+            <option value="31603">Fire</option>
+            <option value="31703">Ice</option>
+            <option value="31503">Physic</option>
+        </select>
+        <label for="disc_substat4_value">substat4 value</label>
+        <input type="number" id="disc_substat4_value">
+        <label for="disc_substat4_level">substat4 level</label>
+        <input type="number" id="disc_substat4_level">
     </div>
 
     <button onclick="printQuery()">Print</button>
 
-    <div id="output">output here</div>
+    <div id="query">output here</div>
 
     <button onclick="copyQuery()">Copy</button>
 
     <script>
         function printQuery() {
+            // main properties
             const set = document.getElementById('disc_set').value;
             const quality = document.getElementById('disc_quality').value;
             const stared = document.getElementById('disc_stared').checked ? '1' : '0';
             const slot = document.getElementById('disc_slot').value;
             const level = document.getElementById('disc_level').value;
-            const mainstat = document.getElementById('disc_mainstat').value;
 
-            document.getElementById('output').textContent = "addequip " + set + quality + slot + ' ' + level + ' ' + stared + ' ' + mainstat;
+            // stats types
+            const mainstat = document.getElementById('disc_mainstat').value;
+            const substat1 = document.getElementById('disc_substat1').value;
+            const substat2 = document.getElementById('disc_substat2').value;
+            const substat3 = document.getElementById('disc_substat3').value;
+            const substat4 = document.getElementById('disc_substat4').value;
+
+            // stats value
+            const mainstat_value = document.getElementById('disc_mainstat_value').value;
+            const substat1_value = document.getElementById('disc_substat1_value').value;
+            const substat2_value = document.getElementById('disc_substat2_value').value;
+            const substat3_value = document.getElementById('disc_substat3_value').value;
+            const substat4_value = document.getElementById('disc_substat4_value').value;
+
+            // stats levels
+            const substat1_level = document.getElementById('disc_substat1_level').value;
+            const substat2_level = document.getElementById('disc_substat2_level').value;
+            const substat3_level = document.getElementById('disc_substat3_level').value;
+            const substat4_level = document.getElementById('disc_substat4_level').value;
+
+
+            document.getElementById('query').textContent =
+                "addequip " + set + quality + slot + ' ' +
+                level + ' ' +
+                stared + ' ' +
+                ' [' +
+                mainstat + ' ' + mainstat_value + ' ' + '1 '
+            substat1 + ' ' + substat1_value + ' ' + substat1_level + ' '
+            substat2 + ' ' + substat2_value + ' ' + substat2_level + ' '
+            substat3 + ' ' + substat3_value + ' ' + substat3_level + ' '
+            substat4 + ' ' + substat4_value + ' ' + substat4_level +
+                ']';
         }
 
         function copyQuery() {
